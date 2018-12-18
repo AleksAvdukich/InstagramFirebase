@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0B5F6921C8055B00F02311 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0B5F6821C8055B00F02311 /* UserProfileHeader.swift */; };
 		1F5A989621C68085003C6622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A989521C68085003C6622 /* AppDelegate.swift */; };
 		1F5A989821C68085003C6622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A989721C68085003C6622 /* ViewController.swift */; };
 		1F5A989B21C68085003C6622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5A989921C68085003C6622 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F0B5F6821C8055B00F02311 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		1F5A989221C68085003C6622 /* InstagramFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5A989521C68085003C6622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F5A989721C68085003C6622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0B5F6721C8052D00F02311 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				1F5A98B021C723A4003C6622 /* UserProfileController.swift */,
+				1F0B5F6821C8055B00F02311 /* UserProfileHeader.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
 		1F5A988921C68085003C6622 = {
 			isa = PBXGroup;
 			children = (
@@ -69,10 +80,10 @@
 		1F5A989421C68085003C6622 /* InstagramFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				1F0B5F6721C8052D00F02311 /* UserProfile */,
 				1F5A98A921C68F3D003C6622 /* Utils */,
 				1F5A989521C68085003C6622 /* AppDelegate.swift */,
 				1F5A98AE21C71607003C6622 /* MainTabBarController.swift */,
-				1F5A98B021C723A4003C6622 /* UserProfileController.swift */,
 				1F5A989721C68085003C6622 /* ViewController.swift */,
 				1F5A989921C68085003C6622 /* Main.storyboard */,
 				1F5A989C21C68086003C6622 /* Assets.xcassets */,
@@ -230,6 +241,7 @@
 				1F5A989821C68085003C6622 /* ViewController.swift in Sources */,
 				1F5A98AB21C68F66003C6622 /* Extensions.swift in Sources */,
 				1F5A98AF21C71607003C6622 /* MainTabBarController.swift in Sources */,
+				1F0B5F6921C8055B00F02311 /* UserProfileHeader.swift in Sources */,
 				1F5A98B121C723A4003C6622 /* UserProfileController.swift in Sources */,
 				1F5A989621C68085003C6622 /* AppDelegate.swift in Sources */,
 			);
