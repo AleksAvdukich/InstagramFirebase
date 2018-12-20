@@ -31,9 +31,9 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINav
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        if let editedImage = info[.editedImage] as? UIImage {
+        if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             plusPhotoButton.setImage(editedImage.withRenderingMode(.alwaysOriginal), for: .normal)
-        } else if let originalImage = info[.originalImage] as? UIImage {
+        } else if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             plusPhotoButton.setImage(originalImage.withRenderingMode(.alwaysOriginal), for: .normal)
         }
         
@@ -121,7 +121,6 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINav
             
             guard let image = self.plusPhotoButton.imageView?.image else { return }
             
-            //            let uploadData = UIImageJPEGRepresentation(image, 0.3)
             guard let uploadData = image.jpegData(compressionQuality: 0.3) else { return }
             
             let filename = NSUUID().uuidString
@@ -145,7 +144,7 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINav
                     let dictionaryValues = ["username": username, "profileImageUrl": profileImageUrl]
 //                    let values = [uid: dictionaryValues]
                     
-                    self.ref.child(uid).updateChildValues(dictionaryValues, withCompletionBlock: { (err, ref) in
+                    self.ref.child(uid).updateChildValues(dictionaryValues as [AnyHashable : Any], withCompletionBlock: { (err, ref) in
                         
                         if let err = err {
                             print("Failed to save user info into db:", err)

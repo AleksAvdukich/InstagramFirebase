@@ -168,8 +168,6 @@ class UserProfileHeader: UICollectionViewCell {
                 return
             }
             //perhaps check for response status of 200 (HTTP OK)
-            
-            
             guard let data = data else { return }
             
             let image = UIImage(data: data)
