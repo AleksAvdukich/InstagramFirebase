@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F0B5F6921C8055B00F02311 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0B5F6821C8055B00F02311 /* UserProfileHeader.swift */; };
+		1F20699121CEC3F300994AF3 /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F20699021CEC3F300994AF3 /* PhotoSelectorCell.swift */; };
 		1F5A989621C68085003C6622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A989521C68085003C6622 /* AppDelegate.swift */; };
 		1F5A989821C68085003C6622 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A989721C68085003C6622 /* SignUpController.swift */; };
 		1F5A989B21C68085003C6622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5A989921C68085003C6622 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		1F0B5F6821C8055B00F02311 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
+		1F20699021CEC3F300994AF3 /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
 		1F5A989221C68085003C6622 /* InstagramFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5A989521C68085003C6622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F5A989721C68085003C6622 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				1F654E6821CC20F000799427 /* PhotoSelectorController.swift */,
+				1F20699021CEC3F300994AF3 /* PhotoSelectorCell.swift */,
 			);
 			path = AddPhoto;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5A989821C68085003C6622 /* SignUpController.swift in Sources */,
+				1F20699121CEC3F300994AF3 /* PhotoSelectorCell.swift in Sources */,
 				1F5A98AB21C68F66003C6622 /* Extensions.swift in Sources */,
 				1F5A98AF21C71607003C6622 /* MainTabBarController.swift in Sources */,
 				1F0B5F6921C8055B00F02311 /* UserProfileHeader.swift in Sources */,
