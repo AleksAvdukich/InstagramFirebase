@@ -94,7 +94,7 @@ class LoginController: UIViewController {
 
             mainTabBarController.setupViewControllers()
             
-            self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil) // !!!!!!
         }
     }
     
