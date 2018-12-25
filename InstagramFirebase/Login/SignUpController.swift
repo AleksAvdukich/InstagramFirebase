@@ -134,7 +134,7 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINav
                 print(metadata as Any)
                 
                 var profileImageUrl: String?
-                self.storageRef.child("profile_image").downloadURL(completion: { (url, error) in
+                self.storageRef.child("profile_image").child(filename).downloadURL(completion: { (url, error) in
                     profileImageUrl = url?.absoluteString
                     
                     print("Successfully uploaded pfofile image:", profileImageUrl ?? "")

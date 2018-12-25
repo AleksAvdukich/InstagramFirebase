@@ -23,8 +23,10 @@ class SharePhotoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //guard let uid = Auth.auth().currentUser?.uid else { return }
+        
         storageRef = Storage.storage().reference().child("posts")
-        ref = Database.database().reference(withPath: "posts")
+        ref = Database.database().reference(withPath: "users")
         
         view.backgroundColor = UIColor.rgb(red: 240, green: 240, blue: 240)
         
@@ -95,7 +97,7 @@ class SharePhotoController: UIViewController {
                 
                 let values = ["postimageUrl": ImageUrl, "caption": caption, "imageWidth": postImage.size.width, "imageHeight": postImage.size.height, "creationDate": Date().timeIntervalSince1970] as [String : Any]
                 
-                ref.updateChildValues(values, withCompletionBlock: { (err, ref) in
+                ref.setValue(values, withCompletionBlock: { (err, ref) in
                     if let err = err {
                         self.navigationItem.rightBarButtonItem?.isEnabled = true
                         print("Failed to save post to DB", err)
