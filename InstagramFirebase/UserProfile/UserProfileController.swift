@@ -32,12 +32,12 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
         
         //fetchPosts()
         
-        fetchOrderPosts()
+        fetchOrderedPosts()
     }
     
     var posts = [Post]()
     
-    fileprivate func fetchOrderPosts() {
+    fileprivate func fetchOrderedPosts() {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let ref = Database.database().reference().child("posts").child(uid)
         
@@ -45,37 +45,17 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
         ref.queryOrdered(byChild: "creationDate").observe(.childAdded, with: { (snapshot) in
             guard let dictionary = snapshot.value as? [String: Any] else { return }
         
-            let post = Post(dictionary: dictionary)
-            self.posts.append(post)
+            guard let user = self.user else { return }
+            
+            let post = Post(user: user, dictionary: dictionary)
+            
+            self.posts.insert(post, at: 0)
+            //self.posts.append(post)
             
             self.collectionView.reloadData()
             
         }) { (err) in
             print("Failed to fetch ordered posts:", err)
-        }
-    }
-    
-    fileprivate func fetchPosts() {
-        guard let uid = Auth.auth().currentUser?.uid else { return }
-        
-        let ref = Database.database().reference().child("posts").child(uid)
-        
-        ref.observe(.value, with: { (snapshot) in
-            
-            guard let dictionaries = snapshot.value as? [String: Any] else { return }
-            
-            dictionaries.forEach({ (key, value) in
-                
-                guard let dictionary = value as? [String: Any] else { return }
-                
-                let post = Post(dictionary: dictionary)
-                self.posts.append(post)
-            })
-            
-            self.collectionView.reloadData()
-            
-        }) { (err) in
-            print("Failed to fetch posts:", err)
         }
     }
     
@@ -169,17 +149,6 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
         }
     }
 }
-
-struct User {
-    let username: String
-    let profileImageUrl: String
-    
-    init(dictionary: [String: Any]) {
-        self.username = dictionary["username"] as? String ?? ""
-        self.profileImageUrl = dictionary["profileImageUrl"] as? String ?? ""
-    }
-}
-
 
 
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F0B5F6921C8055B00F02311 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0B5F6821C8055B00F02311 /* UserProfileHeader.swift */; };
 		1F10B11D21D1B53200E38745 /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10B11C21D1B53200E38745 /* HomePostCell.swift */; };
+		1F10B11F21D2FC8C00E38745 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10B11E21D2FC8C00E38745 /* User.swift */; };
 		1F12AE2921D1AFA600EAC9B1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12AE2821D1AFA600EAC9B1 /* HomeController.swift */; };
 		1F14F64621D064A200AFEF9B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14F64521D064A200AFEF9B /* Post.swift */; };
 		1F14F64821D0695D00AFEF9B /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14F64721D0695D00AFEF9B /* UserProfilePhotoCell.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		1F0B5F6821C8055B00F02311 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		1F10B11C21D1B53200E38745 /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
+		1F10B11E21D2FC8C00E38745 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1F12AE2821D1AFA600EAC9B1 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		1F14F64521D064A200AFEF9B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1F14F64721D0695D00AFEF9B /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				1F14F64521D064A200AFEF9B /* Post.swift */,
+				1F10B11E21D2FC8C00E38745 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				1F14F64621D064A200AFEF9B /* Post.swift in Sources */,
 				1F5A98AB21C68F66003C6622 /* Extensions.swift in Sources */,
 				1F14F64821D0695D00AFEF9B /* UserProfilePhotoCell.swift in Sources */,
+				1F10B11F21D2FC8C00E38745 /* User.swift in Sources */,
 				1F5A98AF21C71607003C6622 /* MainTabBarController.swift in Sources */,
 				1F0B5F6921C8055B00F02311 /* UserProfileHeader.swift in Sources */,
 				1F5A98B121C723A4003C6622 /* UserProfileController.swift in Sources */,
