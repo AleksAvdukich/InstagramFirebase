@@ -18,6 +18,8 @@
 		1F14F64821D0695D00AFEF9B /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14F64721D0695D00AFEF9B /* UserProfilePhotoCell.swift */; };
 		1F14F64A21D0BAE100AFEF9B /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14F64921D0BAE100AFEF9B /* CustomImageView.swift */; };
 		1F177DE921DC71670063AAAF /* PreviewPhotoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F177DE821DC71670063AAAF /* PreviewPhotoContainerView.swift */; };
+		1F177DEB21DC90C50063AAAF /* CustomAnimationPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F177DEA21DC90C50063AAAF /* CustomAnimationPresentor.swift */; };
+		1F177DED21DC9B470063AAAF /* CustomAnimationDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F177DEC21DC9B470063AAAF /* CustomAnimationDismisser.swift */; };
 		1F20699121CEC3F300994AF3 /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F20699021CEC3F300994AF3 /* PhotoSelectorCell.swift */; };
 		1F20699321CEF33C00994AF3 /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F20699221CEF33C00994AF3 /* PhotoSelectorHeader.swift */; };
 		1F20699521CF057800994AF3 /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F20699421CF057800994AF3 /* SharePhotoController.swift */; };
@@ -48,6 +50,8 @@
 		1F14F64721D0695D00AFEF9B /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
 		1F14F64921D0BAE100AFEF9B /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		1F177DE821DC71670063AAAF /* PreviewPhotoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPhotoContainerView.swift; sourceTree = "<group>"; };
+		1F177DEA21DC90C50063AAAF /* CustomAnimationPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationPresentor.swift; sourceTree = "<group>"; };
+		1F177DEC21DC9B470063AAAF /* CustomAnimationDismisser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationDismisser.swift; sourceTree = "<group>"; };
 		1F20699021CEC3F300994AF3 /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
 		1F20699221CEF33C00994AF3 /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
 		1F20699421CF057800994AF3 /* SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 			children = (
 				1FECB72E21DC286900EF0A8D /* CameraController.swift */,
 				1F177DE821DC71670063AAAF /* PreviewPhotoContainerView.swift */,
+				1F177DEA21DC90C50063AAAF /* CustomAnimationPresentor.swift */,
+				1F177DEC21DC9B470063AAAF /* CustomAnimationDismisser.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -343,11 +349,13 @@
 				1F14F64621D064A200AFEF9B /* Post.swift in Sources */,
 				1F149A6821D3F0F600131DA8 /* UserSearchController.swift in Sources */,
 				1F5A98AB21C68F66003C6622 /* Extensions.swift in Sources */,
+				1F177DEB21DC90C50063AAAF /* CustomAnimationPresentor.swift in Sources */,
 				1FECB72F21DC286900EF0A8D /* CameraController.swift in Sources */,
 				1F14F64821D0695D00AFEF9B /* UserProfilePhotoCell.swift in Sources */,
 				1F10B11F21D2FC8C00E38745 /* User.swift in Sources */,
 				1F5A98AF21C71607003C6622 /* MainTabBarController.swift in Sources */,
 				1F0B5F6921C8055B00F02311 /* UserProfileHeader.swift in Sources */,
+				1F177DED21DC9B470063AAAF /* CustomAnimationDismisser.swift in Sources */,
 				1F5A98B121C723A4003C6622 /* UserProfileController.swift in Sources */,
 				1F5A989621C68085003C6622 /* AppDelegate.swift in Sources */,
 				1F177DE921DC71670063AAAF /* PreviewPhotoContainerView.swift in Sources */,
