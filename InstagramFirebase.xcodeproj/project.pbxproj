@@ -21,7 +21,7 @@
 		1F177DEB21DC90C50063AAAF /* CustomAnimationPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F177DEA21DC90C50063AAAF /* CustomAnimationPresentor.swift */; };
 		1F177DED21DC9B470063AAAF /* CustomAnimationDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F177DEC21DC9B470063AAAF /* CustomAnimationDismisser.swift */; };
 		1F177DEF21E149300063AAAF /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F177DEE21E149300063AAAF /* CommentsController.swift */; };
-		1F177DF121E494CD0063AAAF /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F177DF021E494CD0063AAAF /* CommentsCell.swift */; };
+		1F177DF121E494CD0063AAAF /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F177DF021E494CD0063AAAF /* CommentCell.swift */; };
 		1F177DF321E4C7090063AAAF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F177DF221E4C7090063AAAF /* Comment.swift */; };
 		1F20699121CEC3F300994AF3 /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F20699021CEC3F300994AF3 /* PhotoSelectorCell.swift */; };
 		1F20699321CEF33C00994AF3 /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F20699221CEF33C00994AF3 /* PhotoSelectorHeader.swift */; };
@@ -56,7 +56,7 @@
 		1F177DEA21DC90C50063AAAF /* CustomAnimationPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationPresentor.swift; sourceTree = "<group>"; };
 		1F177DEC21DC9B470063AAAF /* CustomAnimationDismisser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationDismisser.swift; sourceTree = "<group>"; };
 		1F177DEE21E149300063AAAF /* CommentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
-		1F177DF021E494CD0063AAAF /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
+		1F177DF021E494CD0063AAAF /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		1F177DF221E4C7090063AAAF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		1F20699021CEC3F300994AF3 /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
 		1F20699221CEF33C00994AF3 /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				1F12AE2821D1AFA600EAC9B1 /* HomeController.swift */,
 				1F10B11C21D1B53200E38745 /* HomePostCell.swift */,
 				1F177DEE21E149300063AAAF /* CommentsController.swift */,
-				1F177DF021E494CD0063AAAF /* CommentsCell.swift */,
+				1F177DF021E494CD0063AAAF /* CommentCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -364,7 +364,7 @@
 				1F10B11F21D2FC8C00E38745 /* User.swift in Sources */,
 				1F5A98AF21C71607003C6622 /* MainTabBarController.swift in Sources */,
 				1F0B5F6921C8055B00F02311 /* UserProfileHeader.swift in Sources */,
-				1F177DF121E494CD0063AAAF /* CommentsCell.swift in Sources */,
+				1F177DF121E494CD0063AAAF /* CommentCell.swift in Sources */,
 				1F177DED21DC9B470063AAAF /* CustomAnimationDismisser.swift in Sources */,
 				1F5A98B121C723A4003C6622 /* UserProfileController.swift in Sources */,
 				1F5A989621C68085003C6622 /* AppDelegate.swift in Sources */,
