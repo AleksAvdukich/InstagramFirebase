@@ -9,7 +9,8 @@
 import UIKit
 
 protocol HomePostCellDelegate {
-    func didTapcomment(post: Post)
+    func didTapComment(post: Post)
+    func didLike(for cell: HomePostCell)
 }
 
 class HomePostCell: UICollectionViewCell {
@@ -20,6 +21,10 @@ class HomePostCell: UICollectionViewCell {
         didSet {
             guard let postImageUrl = post?.imageUrl else { return }
             
+            let likeSel = UIImage(named: "like_selected")
+            let likeUnsel = UIImage(named: "like_unselected")
+            
+            likeButton.setImage(post?.hasLiked == true ? likeSel!.withRenderingMode(.alwaysOriginal) : likeUnsel!.withRenderingMode(.alwaysOriginal), for: .normal)
             photoImageView.loadImage(urlString: postImageUrl)
             
             usernameLabel.text = "TEST USERNAME"
@@ -79,11 +84,17 @@ class HomePostCell: UICollectionViewCell {
         return button
     }()
     
-    let likeButton: UIButton = {
+    lazy var likeButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(named: "like_unselected")?.withRenderingMode(.alwaysOriginal), for: .normal)
+        button.addTarget(self, action: #selector(handleLike), for: .touchUpInside)
         return button
     }()
+    
+    @objc func handleLike() {
+        print("Handling like from within cell...")
+        delegate?.didLike(for: self)
+    }
     
     lazy var commentButton: UIButton = {
         let button = UIButton(type: .system)
@@ -96,7 +107,7 @@ class HomePostCell: UICollectionViewCell {
         print("Trying to show comments...")
         guard let post = post else { return }
         
-        delegate?.didTapcomment(post: post)
+        delegate?.didTapComment(post: post)
     }
     
     let sendMessageButton: UIButton = {
